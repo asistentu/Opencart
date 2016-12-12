@@ -90,7 +90,7 @@ class ControllerPaymentMobilpay extends Controller {
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/mobilpay.tpl')) {
 			return $this->load->view($this->config->get('config_template') . '/template/payment/mobilpay.tpl', $data);
 		} else {
-			return $this->load->view('default/template/payment/mobilpay.tpl', $data);
+			return $this->load->view('/payment/mobilpay.tpl', $data);
 		}	
 	}
 	
